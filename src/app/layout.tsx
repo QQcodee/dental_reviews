@@ -3,14 +3,38 @@ import localFont from "next/font/local";
 import "./globals.css";
 
 const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
+  src: "/fonts/GeistVF.woff",
   variable: "--font-geist-sans",
   weight: "100 900",
 });
+
 const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
+  src: "/fonts/GeistMonoVF.woff",
   variable: "--font-geist-mono",
   weight: "100 900",
+});
+
+const clashDisplay = localFont({
+  src: [
+    { path: "/fonts/ClashDisplay-Bold.woff2", weight: "700", style: "normal" },
+    {
+      path: "/fonts/ClashDisplay-Extralight.woff2",
+      weight: "200",
+      style: "normal",
+    },
+    {
+      path: "/fonts/ClashDisplay-Semibold.woff2",
+      weight: "600",
+      style: "normal",
+    },
+    {
+      path: "/fonts/ClashDisplay-Variable.woff2",
+      weight: "100 900",
+      style: "normal",
+    }, // If it's a variable font
+  ],
+  variable: "--font-clash-display",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -26,7 +50,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${clashDisplay.variable} antialiased`}
       >
         {children}
       </body>
