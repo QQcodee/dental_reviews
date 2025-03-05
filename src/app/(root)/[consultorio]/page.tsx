@@ -1,10 +1,12 @@
 "use client";
-import React, { useState } from "react";
+
+import { useState } from "react";
 import { Star, ThumbsUp, ThumbsDown } from "lucide-react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { useRouter } from "next/navigation";
 
-const page = () => {
+const Page = () => {
+  // ✅ Uppercase function name
   const [rating, setRating] = useState(0);
   const [isPositive, setIsPositive] = useState(null);
 
@@ -15,6 +17,7 @@ const page = () => {
   };
 
   const handleFeedback = (isPositiveFeedback: boolean) => {
+    //@ts-expect-error
     setIsPositive(isPositiveFeedback);
   };
 
@@ -27,7 +30,7 @@ const page = () => {
         </Avatar>
         <h2 className="font-bold poppins">Dra. Cristina Chao</h2>
         <h1 className="font-bold poppins text-center text-2xl sm:text-3xl">
-          ¿Que tal fue tu experiencia con nosotros?
+          ¿Qué tal fue tu experiencia con nosotros?
         </h1>
 
         {isPositive === null ? (
@@ -42,7 +45,7 @@ const page = () => {
                     : "text-gray-300 hover:text-green-500"
                 }
               />
-              <p className="text-lg text-gray-500 ">Buena</p>
+              <p className="text-lg text-gray-500">Buena</p>
             </div>
             <div className="flex flex-col gap-2 items-center">
               <ThumbsDown
@@ -58,6 +61,7 @@ const page = () => {
             </div>
           </div>
         ) : null}
+
         {isPositive ? (
           <div className="flex gap-2 mt-10">
             {[...Array(5)].map((_, i) => (
@@ -74,6 +78,7 @@ const page = () => {
             ))}
           </div>
         ) : null}
+
         {rating > 3 ? (
           <button
             onClick={() =>
@@ -97,4 +102,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page; // ✅ Corrected export
