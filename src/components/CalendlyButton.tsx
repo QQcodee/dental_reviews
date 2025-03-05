@@ -17,7 +17,9 @@ const CalendlyPopupWidget = ({ text }: { text: string }) => {
   // Function to handle the click event and open Calendly popup
   const handleClick = (event: React.MouseEvent) => {
     event.preventDefault(); // Prevent the default link behavior
+    //@ts-ignore
     if (window.Calendly) {
+      //@ts-ignore
       window.Calendly.initPopupWidget({
         url: "https://calendly.com/enrique-cb/google-reviews", // Your Calendly URL
       });
