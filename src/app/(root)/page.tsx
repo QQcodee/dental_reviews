@@ -83,6 +83,13 @@ const page = () => {
             RESULTADOS
           </h3>
 
+          <p className="text-center max-w-2xl text-gray-600">
+            Los resultados se muestran mediante heatmaps (mapas de calor) que
+            indican las áreas con mayor visibilidad de tu negocio, y los
+            rankings en Google Maps, que muestran tu posición en los resultados
+            de búsqueda para dentistas en tu ciudad.
+          </p>
+
           <div className="flex flex-col items-center justify-center gap-2">
             {" "}
             <ReactCompareSlider
