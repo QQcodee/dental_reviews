@@ -36,7 +36,7 @@ const CalendlyPopupWidget = ({ text }: { text: string }) => {
       <a
         href="#"
         onClick={handleClick}
-        className="bg-[#20ACCD] w-full text-white py-2 px-2 font-bold tracking-widest border-[2px] border-black mt-10 uppercase text-[18px] text-center "
+        className="bg-[#20ACCD] w-full text-white py-2 px-2 font-bold tracking-widest border-[2px] border-black  uppercase text-[18px] text-center "
       >
         {text || "Text Missing"}
       </a>

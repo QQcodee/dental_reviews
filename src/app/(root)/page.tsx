@@ -5,6 +5,7 @@ import Image from "next/image";
 import React from "react";
 import Logo from "@/assets/Logo_Dental_Reviews.png";
 import {
+  ArrowRight,
   Filter,
   Menu,
   MessageCircle,
@@ -23,14 +24,7 @@ const page = () => {
       <header className="w-full h-[110px] border-b border-b-[3px] border-black flex items-center justify-between pr-4">
         <Image src={Logo} alt="logo" className="w-[155px]" />
         <div className="flex items-center gap-4 ">
-          <a
-            href="tel:+526143035198"
-            className="bg-[#20ACCD] text-white py-2 px-4 font-bold tracking-widest border-[2px] border-black"
-          >
-            LLAMAR AHORA
-          </a>
-
-          <Menu size={32} className="hidden" />
+          <Menu size={32} />
         </div>
       </header>
       <div className=" sm:max-w-[700px]">
@@ -39,12 +33,12 @@ const page = () => {
             {" "}
             Aumenta tus reseñas de forma automática y sin esfuerzo
           </h1>
-          <h2 className="text-[18px] font-light">
-            Mejora tu reputación online, atrae más clientes y aumenta tu
-            visibilidad en Google con nuestro sistema automatizado de reseñas.
+          <h2 className="text-[18px] font-light mb-10">
+            Posiciónate por encima de tu competencia en Google y multiplica tus
+            ingresos.
           </h2>
 
-          <CalendlyPopupWidget text="¡Mejora tus reseñas hoy!" />
+          <CalendlyPopupWidget text="50 reviews aseguradas el primer mes" />
         </div>
         <div className="flex flex-col items-start justify-start pl-8 pr-5 mt-10 w-full gap-5">
           <h3 className="font-semibold text-[27px] mb-5 text-center w-full">
@@ -89,7 +83,7 @@ const page = () => {
             RESULTADOS
           </h3>
 
-          <div className="">
+          <div className="flex flex-col items-center justify-center gap-2">
             {" "}
             <ReactCompareSlider
               className="cursor-pointer"
@@ -106,8 +100,17 @@ const page = () => {
                 />
               }
             />
+            <sub className="mb-2">ranking de google</sub>
+            <div className="flex items-center gap-2">
+              <h2 className="tracking-wider">De 3 reviews</h2>
+              <ArrowRight size={24} />
+              <h2 className="tracking-wider">A 37 reviews</h2>
+            </div>
+            <h3 className="bg-green-400 text-white p-2 font-semibold">
+              +1133.33%
+            </h3>
           </div>
-          <div className="">
+          <div className="flex flex-col items-center justify-center gap-2">
             {" "}
             <ReactCompareSlider
               className="cursor-pointer"
@@ -124,8 +127,17 @@ const page = () => {
                 />
               }
             />
+            <sub className="mb-2">ranking de google</sub>
+            <div className="flex items-center gap-2">
+              <h2 className="tracking-wider">De 1 review</h2>
+              <ArrowRight size={24} />
+              <h2 className="tracking-wider">A 22 reviews</h2>
+            </div>
+            <h3 className="bg-green-400 text-white p-2 font-semibold">
+              +2100%
+            </h3>
           </div>
-          <div className="">
+          <div className="flex flex-col items-center justify-center gap-2">
             {" "}
             <ReactCompareSlider
               className="cursor-pointer"
@@ -142,9 +154,18 @@ const page = () => {
                 />
               }
             />
+            <sub className="mb-2">ranking de google</sub>
+            <div className="flex items-center gap-2">
+              <h2 className="tracking-wider">De 19 reviews</h2>
+              <ArrowRight size={24} />
+              <h2 className="tracking-wider">A 42 reviews</h2>
+            </div>
+            <h3 className="bg-green-400 text-white p-2 font-semibold">
+              +121.05%
+            </h3>
           </div>
 
-          <CalendlyPopupWidget text="¡Mejora tus reseñas hoy!" />
+          <CalendlyPopupWidget text="    COMENZAR HOY" />
         </div>
         <div className=" hidden flex flex-col items-start justify-start pl-8 pr-5 mt-10 w-full gap-5">
           <h3 className="font-semibold text-[27px] mb-5 text-center w-full">
