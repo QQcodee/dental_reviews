@@ -34,11 +34,11 @@ const page = () => {
             Aumenta tus reseñas de forma automática y sin esfuerzo
           </h1>
           <h2 className="text-[18px] font-light mb-10">
-            Posiciónate por encima de tu competencia en Google y multiplica tus
-            ingresos.
+            Te ayudamos a obtener 50 reseñas en el primer mes trabajando con
+            nosotros.
           </h2>
 
-          <CalendlyPopupWidget text="50 reviews aseguradas el primer mes" />
+          <CalendlyPopupWidget text="¡AGENDAR UNA CONSULTA AHORA!" />
         </div>
         <div className="flex flex-col items-start justify-start pl-8 pr-5 mt-10 w-full gap-5">
           <h3 className="font-semibold text-[27px] mb-5 text-center w-full">
@@ -172,13 +172,17 @@ const page = () => {
             </h3>
           </div>
 
-          <CalendlyPopupWidget text="    COMENZAR HOY" />
+          <CalendlyPopupWidget text="COMENZAR HOY" />
         </div>
         <div className=" hidden flex flex-col items-start justify-start pl-8 pr-5 mt-10 w-full gap-5">
           <h3 className="font-semibold text-[27px] mb-5 text-center w-full">
             TESTIMONIOS
           </h3>
         </div>
+      </div>
+      <div className="sticky bottom-10 w-full flex items-center justify-center px-5">
+        {" "}
+        <CalendlyPopupWidget text="Solicita tu demostración gratuita" />
       </div>
     </div>
   );
