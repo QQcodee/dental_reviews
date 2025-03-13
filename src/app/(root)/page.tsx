@@ -180,7 +180,7 @@ const page = () => {
           </h3>
         </div>
       </div>
-      <div className="sticky bottom-10 w-full flex items-center justify-center px-5">
+      <div className="sticky sm:hidden bottom-10 w-full flex items-center justify-center px-5">
         {" "}
         <CalendlyPopupWidget text="Solicita tu demostración gratuita" />
       </div>
