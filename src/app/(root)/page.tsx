@@ -29,16 +29,16 @@ const page = () => {
       </header>
       <div className=" sm:max-w-[700px]">
         <div className="flex flex-col items-center justify-start pl-8 pr-5">
-          <h1 className="text-[27px] font-medium uppercase">
+          <h1 className="text-[27px] font-semibold uppercase">
             {" "}
             Aumenta tus reseñas de forma automática y sin esfuerzo
           </h1>
-          <h2 className="text-[18px] font-light mb-10">
-            Te ayudamos a obtener 50 reseñas en el primer mes trabajando con
-            nosotros.
+          <h2 className="text-[18px] font-regular mb-10">
+            Te ayudamos a obtener <strong>50 reseñas en el primer mes</strong>{" "}
+            trabajando con nosotros.
           </h2>
 
-          <CalendlyPopupWidget text="¡AGENDAR UNA CONSULTA AHORA!" />
+          <CalendlyPopupWidget text="¡AGENDAR UNA CONSULTA GRATIS AHORA!" />
         </div>
         <div className="flex flex-col items-start justify-start pl-8 pr-5 mt-10 w-full gap-5">
           <h3 className="font-semibold text-[27px] mb-5 text-center w-full">
